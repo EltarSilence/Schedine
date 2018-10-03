@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1538576371 source:d:\c++ 2018\schedine v1.0\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
