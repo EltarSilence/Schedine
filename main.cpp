@@ -8,7 +8,7 @@
 
 #define N_BETS 100
 #define ESITI 3
-#define WINPROB 0
+#define WINPROB 48
 
 using namespace std;
 
@@ -16,6 +16,7 @@ int main() {
     int win_number = 0;
     int lose_number = 0;
     int money = 2;
+    float avg_money = 2;
 
     srand(time(NULL));
 
@@ -37,9 +38,10 @@ int main() {
                 money -= 2;
             }
         }
-        cout << endl << "Schedine vincenti: " << win_number <<endl;
-        cout << "Schedine perdenti: " << lose_number <<endl;
+        cout << endl << "Vincenti " << win_number;
+        cout << " - " << lose_number << " Perdenti" <<endl;
         cout << "Soldi attuali: " << money << endl;
+
         PRESS_A_KEY;
         CLEAR_SCREEN;
     }
